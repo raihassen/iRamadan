@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iRamadan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="wxB-j7-7Db">
+                                <rect key="frame" x="10" y="90" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ase-hr-NtB" userLabel="width = 300"/>
+                                    <constraint firstAttribute="height" constant="300" id="X3l-Yf-zPp" userLabel="height = 300"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qIB-Vd-ByZ">
+                                <rect key="frame" x="10" y="90" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fajr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puw-A3-ROn" userLabel="fajrLabel">
+                                        <rect key="frame" x="136" y="0.0" width="28" height="100"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="INa-jk-42O" userLabel="counterLabel">
+                                        <rect key="frame" x="25.5" y="100" width="249.5" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maghrib" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp3-qy-Njx" userLabel="maghribLabel">
+                                        <rect key="frame" x="118.5" y="200" width="63.5" height="100"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bIo-eF-Q54">
+                                <rect key="frame" x="10" y="420" width="300" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="wSN-5R-wNU">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Vf6-8l-r0H"/>
+                                            <constraint firstAttribute="height" constant="50" id="sXa-SX-phA"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Quran-100"/>
+                                        <connections>
+                                            <action selector="duaButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ww-HE-BYw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-DU-QgC">
+                                        <rect key="frame" x="250" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="TBn-de-OkJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="l9C-tC-faT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Settings-100"/>
+                                        <connections>
+                                            <action selector="settingsButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaS-zo-Chx"/>
+                                            <segue destination="ChD-j2-fKJ" kind="show" id="ADN-kh-dNq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6X1-56-phi" userLabel="DuaTextDisplayButton">
+                                <rect key="frame" x="10" y="90" width="300" height="313.5"/>
+                                <state key="normal" image="text"/>
+                                <connections>
+                                    <action selector="duaTextDisplayButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Psf-3n-tKr"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-VI-TJq">
+                                <rect key="frame" x="20" y="90" width="280" height="263.5"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-DG-NQD" userLabel="duaArabicLabel">
+                                        <rect key="frame" x="-20" y="-90" width="837.5" height="0.0"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Dua (Prayer) at the Beginning of the Fast
+  </string>
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="وَبِصَوْمِ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="غَدٍ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="نَّوَيْتَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="مِنْ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="شَهْرِ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="رَمَضَانَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Wa bisawmi ghadinn nawaiytu min shahri ramadan
+I intend to keep the fast for tomorrow in the month of Ramadan
+
+Dua (Prayer) at the End of the Fast
+ </string>
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="اللَّهُمَّ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="اِنِّى">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="لَكَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="صُمْتُ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="وَبِكَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="امنْتُ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="وَعَليْكَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="تَوَكّلتُ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="وَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="عَلى">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="رِزْقِكَ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="اَفْطَرْتُ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="GeezaPro"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">
+Allahumma inni laka sumtu wa bika aamantu wa alayka tawakkaltu wa ala rizq-ika-aftartu
+O Allah! I fasted for You and I believe in You and I put my trust in You and I break my fast with Your sustenance</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a9b-VI-TJq" firstAttribute="top" secondItem="6X1-56-phi" secondAttribute="top" id="1cK-0C-cQm"/>
+                            <constraint firstItem="6X1-56-phi" firstAttribute="trailing" secondItem="F3E-DU-QgC" secondAttribute="trailing" id="2Rn-5J-lGf"/>
+                            <constraint firstItem="a9b-VI-TJq" firstAttribute="trailing" secondItem="6X1-56-phi" secondAttribute="trailing" constant="-10" id="4WB-wO-OCf"/>
+                            <constraint firstItem="qIB-Vd-ByZ" firstAttribute="width" secondItem="wxB-j7-7Db" secondAttribute="width" id="7jf-Vp-nLI"/>
+                            <constraint firstItem="wxB-j7-7Db" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBD-Eg-32A"/>
+                            <constraint firstItem="wxB-j7-7Db" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LO3-wx-KBz"/>
+                            <constraint firstItem="bIo-eF-Q54" firstAttribute="leading" secondItem="wxB-j7-7Db" secondAttribute="leading" id="Qo6-uf-wnB"/>
+                            <constraint firstItem="6X1-56-phi" firstAttribute="top" secondItem="wxB-j7-7Db" secondAttribute="top" id="RvL-qM-sPG"/>
+                            <constraint firstItem="wSN-5R-wNU" firstAttribute="top" secondItem="6X1-56-phi" secondAttribute="bottom" constant="16.5" id="S0I-Yl-CuX"/>
+                            <constraint firstItem="6X1-56-phi" firstAttribute="leading" secondItem="wSN-5R-wNU" secondAttribute="leading" id="Vpa-VE-csl"/>
+                            <constraint firstItem="qIB-Vd-ByZ" firstAttribute="centerY" secondItem="wxB-j7-7Db" secondAttribute="centerY" id="aD8-66-tpY"/>
+                            <constraint firstItem="a9b-VI-TJq" firstAttribute="bottom" secondItem="6X1-56-phi" secondAttribute="bottom" constant="-50" id="gA7-FS-ft3"/>
+                            <constraint firstItem="qIB-Vd-ByZ" firstAttribute="height" secondItem="wxB-j7-7Db" secondAttribute="height" id="ggA-b9-uSk"/>
+                            <constraint firstItem="a9b-VI-TJq" firstAttribute="leading" secondItem="6X1-56-phi" secondAttribute="leading" constant="10" id="lOw-cA-Lg4"/>
+                            <constraint firstItem="qIB-Vd-ByZ" firstAttribute="centerX" secondItem="wxB-j7-7Db" secondAttribute="centerX" id="tl9-b9-VNN"/>
+                            <constraint firstItem="bIo-eF-Q54" firstAttribute="trailing" secondItem="wxB-j7-7Db" secondAttribute="trailing" id="vdU-sg-rfG"/>
+                            <constraint firstItem="bIo-eF-Q54" firstAttribute="top" secondItem="wxB-j7-7Db" secondAttribute="bottom" constant="30" id="yW9-jq-jRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleImage" destination="wxB-j7-7Db" id="E6C-2c-esW"/>
+                        <outlet property="counterLabel" destination="INa-jk-42O" id="byk-mz-Uov"/>
+                        <outlet property="duaArabicLabel" destination="yM1-DG-NQD" id="Rnk-YB-P90"/>
+                        <outlet property="duaButton" destination="wSN-5R-wNU" id="ehx-Ww-TNY"/>
+                        <outlet property="duaTextDisplayButton" destination="6X1-56-phi" id="cHt-st-ugY"/>
+                        <outlet property="fajrLabel" destination="Puw-A3-ROn" id="XHX-JL-Ycj"/>
+                        <outlet property="maghribLabel" destination="Fp3-qy-Njx" id="jFn-EO-JcB"/>
+                        <outlet property="settingsButton" destination="F3E-DU-QgC" id="Jxq-1c-yQX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="128.87323943661971"/>
+        </scene>
+        <!--SettingVC-->
+        <scene sceneID="TJC-Bm-Rfq">
+            <objects>
+                <viewController id="ChD-j2-fKJ" customClass="SettingVC" customModule="iRamadan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g1N-rb-zeJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yte-d4-ei6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atc-zM-ZGH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vfY-Bg-IAP">
+                                <rect key="frame" x="16" y="90" width="288" height="96"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Kb-u4-a7d">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cU-h1-BKn" userLabel="calculationMethodLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I26-bT-Njc" userLabel="calculationMethodButton">
+                                                <rect key="frame" x="144" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Institute of Geophysics, University of Tehran">
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculationMethodButtonIsPressed:" destination="ChD-j2-fKJ" eventType="touchUpInside" id="jQu-x3-Qne"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4sN-er-Xg3">
+                                        <rect key="frame" x="0.0" y="32" width="288" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-DD-hXa" userLabel="juristicSettingsLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-WF-UFk" userLabel="jursticSettingsButton">
+                                                <rect key="frame" x="144" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Not set">
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="jurisdicSettingsButtonIsPressed:" destination="ChD-j2-fKJ" eventType="touchUpInside" id="pse-gY-bYu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wkA-QS-K7u">
+                                        <rect key="frame" x="0.0" y="64" width="288" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lattitude adjustment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="LFh-Ki-qgs" userLabel="latitudeAdjustmentLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzv-vb-uMg" userLabel="latitudeAdjustmentButton">
+                                                <rect key="frame" x="144" y="0.0" width="144" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Middle of the Night">
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="latitudeAdjustmentButtonIsPressed:" destination="ChD-j2-fKJ" eventType="touchUpInside" id="NQy-IX-2A6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-s8-uai">
+                                <rect key="frame" x="16" y="220" width="288" height="216"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="9dv-kk-CDU"/>
+                                </constraints>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-Cz-Bue">
+                                <rect key="frame" x="16" y="40" width="288" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1B-me-c7g">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonIsPressed:" destination="ChD-j2-fKJ" eventType="touchUpInside" id="Izr-0j-mXu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EqF-ay-Qb4" userLabel="descriptionLabel">
+                                        <rect key="frame" x="96" y="0.0" width="96" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0Y-df-yX3">
+                                        <rect key="frame" x="192" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonIsPressed:" destination="ChD-j2-fKJ" eventType="touchUpInside" id="Gew-2I-ZQg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zcy-HP-dFw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yte-d4-ei6" firstAttribute="top" secondItem="rOe-s8-uai" secondAttribute="bottom" id="2B0-zK-7vV"/>
+                            <constraint firstItem="vfY-Bg-IAP" firstAttribute="trailing" secondItem="3dh-Cz-Bue" secondAttribute="trailing" id="3HM-Sf-2RR"/>
+                            <constraint firstItem="rOe-s8-uai" firstAttribute="leading" secondItem="atc-zM-ZGH" secondAttribute="leadingMargin" id="92a-DL-Bvr"/>
+                            <constraint firstItem="rOe-s8-uai" firstAttribute="trailing" secondItem="atc-zM-ZGH" secondAttribute="trailingMargin" id="AYT-nJ-3gy"/>
+                            <constraint firstItem="3dh-Cz-Bue" firstAttribute="leading" secondItem="atc-zM-ZGH" secondAttribute="leadingMargin" id="DN0-18-RWs"/>
+                            <constraint firstItem="3dh-Cz-Bue" firstAttribute="top" secondItem="g1N-rb-zeJ" secondAttribute="bottom" constant="20" id="ged-X2-DSy"/>
+                            <constraint firstItem="vfY-Bg-IAP" firstAttribute="top" secondItem="3dh-Cz-Bue" secondAttribute="bottom" constant="20" id="hzV-HC-S1L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3dh-Cz-Bue" secondAttribute="trailing" id="ii0-kq-gMS"/>
+                            <constraint firstItem="vfY-Bg-IAP" firstAttribute="leading" secondItem="3dh-Cz-Bue" secondAttribute="leading" id="wzy-gD-Xf7"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="calculationMethodButton" destination="I26-bT-Njc" id="9JM-1U-Vs4"/>
+                        <outlet property="cancelButton" destination="l1B-me-c7g" id="9CO-Ya-rq3"/>
+                        <outlet property="jurisdicSettingsButton" destination="S3q-WF-UFk" id="Egn-C7-hfW"/>
+                        <outlet property="latitudeAdjustmentButton" destination="Xzv-vb-uMg" id="GcQ-Ge-IUm"/>
+                        <outlet property="pickerView" destination="rOe-s8-uai" id="sG2-eQ-I1Y"/>
+                        <outlet property="saveButton" destination="X0Y-df-yX3" id="VR4-Lj-ofE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVt-nn-LY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785.50724637681162" y="129.61956521739131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Quran-100" width="100" height="100"/>
+        <image name="Settings-100" width="100" height="100"/>
+        <image name="circle" width="304" height="304"/>
+        <image name="text" width="512" height="583"/>
+    </resources>
+</document>

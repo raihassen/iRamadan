@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F409BE3E6FAAD25D78ABD918 /* Pods_iRamadan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CED466C824463546F1F5886 /* Pods_iRamadan.framework */; };
+		FF1CA8AF1EC4B8A600DE8C99 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1CA8AE1EC4B8A600DE8C99 /* SettingVC.swift */; };
+		FF743AFD1EBD0C0F005AFDF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF743AFC1EBD0C0F005AFDF3 /* Constants.swift */; };
+		FF79A8B51EBCAB01008D4B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79A8B41EBCAB01008D4B27 /* AppDelegate.swift */; };
+		FF79A8B71EBCAB01008D4B27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79A8B61EBCAB01008D4B27 /* ViewController.swift */; };
+		FF79A8BA1EBCAB01008D4B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF79A8B81EBCAB01008D4B27 /* Main.storyboard */; };
+		FF79A8BC1EBCAB01008D4B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF79A8BB1EBCAB01008D4B27 /* Assets.xcassets */; };
+		FF79A8BF1EBCAB01008D4B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF79A8BD1EBCAB01008D4B27 /* LaunchScreen.storyboard */; };
+		FF79A8C71EBCAB2E008D4B27 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79A8C61EBCAB2E008D4B27 /* Location.swift */; };
+		FF79A8C91EBCAC58008D4B27 /* PrayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79A8C81EBCAC58008D4B27 /* PrayerData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		199A35A0CC341AB9D5DCE380 /* Pods-iRamadan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRamadan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iRamadan/Pods-iRamadan.debug.xcconfig"; sourceTree = "<group>"; };
+		2CED466C824463546F1F5886 /* Pods_iRamadan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iRamadan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6487175D7C551027D07DF6DF /* Pods-iRamadan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRamadan.release.xcconfig"; path = "Pods/Target Support Files/Pods-iRamadan/Pods-iRamadan.release.xcconfig"; sourceTree = "<group>"; };
+		FF1CA8AE1EC4B8A600DE8C99 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		FF743AFC1EBD0C0F005AFDF3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF79A8B11EBCAB01008D4B27 /* iRamadan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRamadan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF79A8B41EBCAB01008D4B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF79A8B61EBCAB01008D4B27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF79A8B91EBCAB01008D4B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF79A8BB1EBCAB01008D4B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF79A8BE1EBCAB01008D4B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF79A8C01EBCAB01008D4B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF79A8C61EBCAB2E008D4B27 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FF79A8C81EBCAC58008D4B27 /* PrayerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF79A8AE1EBCAB01008D4B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F409BE3E6FAAD25D78ABD918 /* Pods_iRamadan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		378F60E53BCB7C337FA8336E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				199A35A0CC341AB9D5DCE380 /* Pods-iRamadan.debug.xcconfig */,
+				6487175D7C551027D07DF6DF /* Pods-iRamadan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDA2520D559921FB14D947E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CED466C824463546F1F5886 /* Pods_iRamadan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF79A8A81EBCAB01008D4B27 = {
+			isa = PBXGroup;
+			children = (
+				FF79A8B31EBCAB01008D4B27 /* iRamadan */,
+				FF79A8B21EBCAB01008D4B27 /* Products */,
+				378F60E53BCB7C337FA8336E /* Pods */,
+				BDA2520D559921FB14D947E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF79A8B21EBCAB01008D4B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF79A8B11EBCAB01008D4B27 /* iRamadan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF79A8B31EBCAB01008D4B27 /* iRamadan */ = {
+			isa = PBXGroup;
+			children = (
+				FF79A8B41EBCAB01008D4B27 /* AppDelegate.swift */,
+				FF79A8B61EBCAB01008D4B27 /* ViewController.swift */,
+				FF79A8B81EBCAB01008D4B27 /* Main.storyboard */,
+				FF79A8BB1EBCAB01008D4B27 /* Assets.xcassets */,
+				FF79A8BD1EBCAB01008D4B27 /* LaunchScreen.storyboard */,
+				FF79A8C01EBCAB01008D4B27 /* Info.plist */,
+				FF79A8C61EBCAB2E008D4B27 /* Location.swift */,
+				FF79A8C81EBCAC58008D4B27 /* PrayerData.swift */,
+				FF743AFC1EBD0C0F005AFDF3 /* Constants.swift */,
+				FF1CA8AE1EC4B8A600DE8C99 /* SettingVC.swift */,
+			);
+			path = iRamadan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF79A8B01EBCAB01008D4B27 /* iRamadan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF79A8C31EBCAB01008D4B27 /* Build configuration list for PBXNativeTarget "iRamadan" */;
+			buildPhases = (
+				BA2E50181D04BBC480E6163D /* [CP] Check Pods Manifest.lock */,
+				FF79A8AD1EBCAB01008D4B27 /* Sources */,
+				FF79A8AE1EBCAB01008D4B27 /* Frameworks */,
+				FF79A8AF1EBCAB01008D4B27 /* Resources */,
+				8C8FAB18A2FE074512D47D2A /* [CP] Embed Pods Frameworks */,
+				3BD874F039404BB6A8962CA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRamadan;
+			productName = iRamadan;
+			productReference = FF79A8B11EBCAB01008D4B27 /* iRamadan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF79A8A91EBCAB01008D4B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Raikhan Khassenova";
+				TargetAttributes = {
+					FF79A8B01EBCAB01008D4B27 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 67TZBKWMCL;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = FF79A8AC1EBCAB01008D4B27 /* Build configuration list for PBXProject "iRamadan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF79A8A81EBCAB01008D4B27;
+			productRefGroup = FF79A8B21EBCAB01008D4B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF79A8B01EBCAB01008D4B27 /* iRamadan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF79A8AF1EBCAB01008D4B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF79A8BF1EBCAB01008D4B27 /* LaunchScreen.storyboard in Resources */,
+				FF79A8BC1EBCAB01008D4B27 /* Assets.xcassets in Resources */,
+				FF79A8BA1EBCAB01008D4B27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD874F039404BB6A8962CA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iRamadan/Pods-iRamadan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8FAB18A2FE074512D47D2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iRamadan/Pods-iRamadan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA2E50181D04BBC480E6163D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF79A8AD1EBCAB01008D4B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF743AFD1EBD0C0F005AFDF3 /* Constants.swift in Sources */,
+				FF1CA8AF1EC4B8A600DE8C99 /* SettingVC.swift in Sources */,
+				FF79A8C91EBCAC58008D4B27 /* PrayerData.swift in Sources */,
+				FF79A8C71EBCAB2E008D4B27 /* Location.swift in Sources */,
+				FF79A8B71EBCAB01008D4B27 /* ViewController.swift in Sources */,
+				FF79A8B51EBCAB01008D4B27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF79A8B81EBCAB01008D4B27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF79A8B91EBCAB01008D4B27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF79A8BD1EBCAB01008D4B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF79A8BE1EBCAB01008D4B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF79A8C11EBCAB01008D4B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF79A8C21EBCAB01008D4B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF79A8C41EBCAB01008D4B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199A35A0CC341AB9D5DCE380 /* Pods-iRamadan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 67TZBKWMCL;
+				INFOPLIST_FILE = iRamadan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = raihassen.iRamadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "72be226a-fb09-4fe3-bfe8-0472928d1611";
+				PROVISIONING_PROFILE_SPECIFIER = "17prov profile";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF79A8C51EBCAB01008D4B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6487175D7C551027D07DF6DF /* Pods-iRamadan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Raikhan Khassenova (67TZBKWMCL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Raikhan Khassenova (67TZBKWMCL)";
+				DEVELOPMENT_TEAM = 67TZBKWMCL;
+				INFOPLIST_FILE = iRamadan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = raihassen.iRamadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "72be226a-fb09-4fe3-bfe8-0472928d1611";
+				PROVISIONING_PROFILE_SPECIFIER = "17prov profile";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF79A8AC1EBCAB01008D4B27 /* Build configuration list for PBXProject "iRamadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF79A8C11EBCAB01008D4B27 /* Debug */,
+				FF79A8C21EBCAB01008D4B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF79A8C31EBCAB01008D4B27 /* Build configuration list for PBXNativeTarget "iRamadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF79A8C41EBCAB01008D4B27 /* Debug */,
+				FF79A8C51EBCAB01008D4B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF79A8A91EBCAB01008D4B27 /* Project object */;
+}

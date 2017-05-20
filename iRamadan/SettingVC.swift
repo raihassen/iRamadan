@@ -60,8 +60,7 @@ class SettingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     }
     @IBAction func saveButtonIsPressed(_ sender: Any) {
         presentingViewController?.viewDidLoad()
-        dismiss(animated: true, completion: nil)
-        print("Dismissed")
+        dismiss(animated: true, completion: nil)        
         // TD: save new values, and update info for prayer time, and view
     }
     
@@ -70,8 +69,6 @@ class SettingVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let tag = pickerView.tag
-        print(tag)
-        print("row\(row)")
         switch tag {
         case 0:
             return calculation[row]

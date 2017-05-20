@@ -65,6 +65,17 @@
                                             <action selector="duaButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ww-HE-BYw"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="yYB-dD-oeV" userLabel="Refresh">
+                                        <rect key="frame" x="125" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="9rl-94-WbK"/>
+                                            <constraint firstAttribute="height" constant="50" id="xJt-px-pSu"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Restart Filled-100"/>
+                                        <connections>
+                                            <action selector="refreshButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhD-Oc-Kgu"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3E-DU-QgC">
                                         <rect key="frame" x="250" y="0.0" width="50" height="50"/>
                                         <constraints>
@@ -73,7 +84,6 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="Settings-100"/>
                                         <connections>
-                                            <action selector="settingsButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaS-zo-Chx"/>
                                             <segue destination="ChD-j2-fKJ" kind="show" id="ADN-kh-dNq"/>
                                         </connections>
                                     </button>
@@ -89,8 +99,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a9b-VI-TJq">
                                 <rect key="frame" x="20" y="90" width="280" height="263.5"/>
                                 <subviews>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-DG-NQD" userLabel="duaArabicLabel">
-                                        <rect key="frame" x="-20" y="-90" width="837.5" height="0.0"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yM1-DG-NQD" userLabel="duaArabicLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="263.5"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">Dua (Prayer) at the Beginning of the Fast
@@ -360,7 +370,7 @@ O Allah! I fasted for You and I believe in You and I put my trust in You and I b
                         <outlet property="duaTextDisplayButton" destination="6X1-56-phi" id="cHt-st-ugY"/>
                         <outlet property="fajrLabel" destination="Puw-A3-ROn" id="XHX-JL-Ycj"/>
                         <outlet property="maghribLabel" destination="Fp3-qy-Njx" id="jFn-EO-JcB"/>
-                        <outlet property="settingsButton" destination="F3E-DU-QgC" id="Jxq-1c-yQX"/>
+                        <outlet property="refreshButton" destination="yYB-dD-oeV" id="l8Z-En-0Rx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -518,6 +528,7 @@ O Allah! I fasted for You and I believe in You and I put my trust in You and I b
     </scenes>
     <resources>
         <image name="Quran-100" width="100" height="100"/>
+        <image name="Restart Filled-100" width="100" height="100"/>
         <image name="Settings-100" width="100" height="100"/>
         <image name="circle" width="304" height="304"/>
         <image name="text" width="512" height="583"/>

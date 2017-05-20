@@ -38,7 +38,6 @@ func getPrayerDataFor(completed: @escaping DownloadComplete){
     Alamofire.request(prayerTimingsURL).responseJSON(){ response in
         switch response.result {
         case .success:
-            print(response)
             // in case of Success parse the data and fill in the prayerTimes
             statusPrayerData = true
             if let result = response.result.value as? Dictionary<String, AnyObject> {                

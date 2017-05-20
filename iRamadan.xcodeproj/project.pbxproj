@@ -376,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Raikhan Khassenova (67TZBKWMCL)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Raikhan Khassenova (67TZBKWMCL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 67TZBKWMCL;
 				INFOPLIST_FILE = iRamadan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
